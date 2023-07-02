@@ -1,0 +1,36 @@
+
+.Contents{
+    width: 100%;
+    // height: 90vh !important;
+    display: flex;
+        .Main-sidebar{
+            transition: all ease-out 0.5s;
+            width:15%;
+            height:92vh;
+            background-color: rgba(227, 240, 244, 0.363);
+            box-shadow: -2px 5px 15px #0000007c;
+        }
+        .closed-Sidebar{
+            transition: all ease-out 0.5s;
+            width:5%;
+            height:92vh;
+            background-color: rgba(227, 240, 244, 0.363);
+            box-shadow: -2px 5px 15px #0000007c;
+        }
+        .Container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            width:100%;
+            height: 85vh;
+            background-color: rgba(247, 247, 246, 0.597);
+            .Container-Contents{
+            box-shadow: -2px 5px 5px #00000051;
+                width: 95%;
+                background-color: rgba(227, 240, 244, 0.274);
+                height: 100%;
+                border-radius: 15px;
+            }
+        }
+}

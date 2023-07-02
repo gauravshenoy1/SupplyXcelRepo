@@ -1,0 +1,33 @@
+.MainNav-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 10%;
+    background-color: #235de6b1;
+    align-items: center;
+    padding: 5px 15px;
+    // box-shadow:6px 5px 10px #0000007c;
+        img:hover{
+            background-color: #ffffffaf;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    .Nav-Heading{
+        display: flex;
+        justify-content: center;
+        h2{
+            display: inline;
+            color: #fff;
+        }
+    }
+    .Nav-UserDetail{
+        width: 12%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        p{
+            color: #fff;
+        }
+    }
+}
