@@ -1,0 +1,19 @@
+@mixin primaryButtons{
+    width: 150px;
+    height: 35px;
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(30, 30, 224, 0.729);
+    &:hover{
+        background-color: rgb(134, 52, 201);
+        outline: 1px solid #e66b6b;
+    }
+}
+
+@mixin textarea{
+    width: 100%;
+    height:100px;
+    border-radius: 5px;
+}
