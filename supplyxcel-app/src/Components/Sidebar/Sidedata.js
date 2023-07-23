@@ -10,37 +10,37 @@ const Data=[
         id:1,
         name:"XML Tools",
         icon:XmlImage,
-        path:""
+        path:"/"
     },
     {
         id:2,
         name:"JSON Tools",
-        path:"",
+        path:"/json",
         icon:JsonImg
     },
     {
         id:3,
         name:"ZPL Tools",
         icon:Zpl,
-        path:"",
+        path:"/zpl",
     },
     {
         id:4,
         name:"Notes",
         icon:Notes,
-        path:"",
+        path:"/notes",
     },
     {
         id:5,
         name:"Supply Chain Calcutor",
         icon:Calci,
-        path:"",
+        path:"/calci",
     },
     {
         id:6,
         name:"World Clock",
         icon:Clock,
-        path:"",
+        path:"/clock",
     },
 ]
 

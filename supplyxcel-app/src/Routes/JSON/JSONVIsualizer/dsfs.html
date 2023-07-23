@@ -1,0 +1,45 @@
+<html>
+<head>
+  <title>json to HTML Converter</title>
+</head>
+<body>
+  <textarea id="json-input" rows="10" cols="50"></textarea>
+  <button id="convert-btn">Convert</button>
+  <div id="output"></div>
+
+  <script>
+document.addEventListener('DOMContentLoaded', () => {
+  const convertBtn = document.getElementById('convert-btn');
+  const jsonInput = document.getElementById('json-input');
+  const outputDiv = document.getElementById('output');
+
+  convertBtn.addEventListener('click', () => {
+    const jsonData = jsonInput.value;
+    convertjsonToHtml(jsonData);
+  });
+
+  function convertjsonToHtml(jsonData) {
+    const apiUrl = 'https://www.anyjson.in/api/v2/data/jsontohtml';
+
+    fetch(apiUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: jsonData,
+    })
+    .then(Response => Response.text())
+    .then(data => 
+    {
+      console.log(data);
+      outputDiv.innerHTML = data;
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+  }
+});
+
+  </script>
+</body>
+</html>

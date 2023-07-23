@@ -1,0 +1,28 @@
+@import "./../../scss/mixin";
+
+
+.ZplContainer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    textarea{
+        height:500px;
+    }
+    .ZPL_btns{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        button{
+            @include primaryButtons;
+            margin: 5PX;
+        }
+    } 
+    .Zpl_img{
+        width: 30%;
+        img{
+            height: 500px;
+        }
+    }
+}

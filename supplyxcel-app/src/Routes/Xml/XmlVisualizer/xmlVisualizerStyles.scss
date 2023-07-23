@@ -1,0 +1,43 @@
+@import '../../../scss/mixin';
+
+.XML_TEXTAREA{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+    font-family: inherit;
+    height: 30%;
+    textarea{
+        padding: 5px;
+        width: 95%;
+    }
+    .XML_TEXTAREA_buttons{
+        margin: 5px 0;
+        display: flex;
+        justify-content: center;
+        button{
+            @include primaryButtons;
+            margin: 0 5px;
+            }
+    }
+}
+    .XML_TEXTAREA_Output{
+        overflow-y:scroll;
+        overflow-x:scroll;
+        width:98%; 
+        height:350px;
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 90%;
+            border: 1px solid #ddd;
+          }
+          th, td {
+            padding: 8px;
+          }
+          
+          tr:nth-child(even){
+            background-color: #f2f2f2
+        }
+
+    }
