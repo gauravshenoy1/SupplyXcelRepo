@@ -1,0 +1,192 @@
+.LoginContainer{
+   width:100vw;
+  height: 100vh;
+  position: relative;
+  .LogError{
+    position: absolute;
+    width:300px;
+    height:50px;
+    top:28%;
+    right: 39%;
+    z-index: 1;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d3d3d365;
+    border: 1px solid #b3b2b2f6 ;
+    box-shadow: 0px 0px 10px red;
+    .LogErrorMsg{
+      color:#fff;
+      font-size: 1rem;
+      padding: 5px;
+      font-weight: 500;
+      letter-spacing: 2px;
+    }
+  }
+ .login1 {
+  position: relative;
+  top: 22%;
+    font-family: inherit;
+    color: white;
+    background: 
+      -webkit-linear-gradient(to right, #267871, #136a8a);
+    background: 
+      linear-gradient(to right, #267871, #136a8a);
+    margin: auto;
+    box-shadow: 
+      0px 2px 10px rgba(0,0,0,0.2), 
+      0px 10px 20px rgba(0,0,0,0.3), 
+      0px 30px 60px 1px rgba(0,0,0,0.5);
+    border-radius: 8px;
+    padding: 50px;
+    width:300px;
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    .head {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .company {
+        font-size: 2.2em;
+      }
+    }
+    .msg {
+      text-align: center;
+    }
+
+    .login{
+    .form input[type=text].text {
+      border: none;
+      background: none;
+      box-shadow: 0px 2px 0px 0px white;
+      width: 100%;
+      color: white;
+      font-size: 1em;
+      outline: none;
+    }
+    .form .text::placeholder {
+      color: #D3D3D3;
+    }
+    .form input[type=password].password {
+      font-family: inherit;
+      border: none;
+      background: none;
+      box-shadow: 0px 2px 0px 0px white;
+      width: 100%;
+      color: white;
+      font-size: 1em;
+      outline: none;
+      margin-top: 20px;
+    }
+    .form .password::placeholder {
+      color: #D3D3D3;
+    }
+    .form .btn-login {
+      position: relative;
+      left:33%;
+      background: none;
+      text-decoration: none;
+      color: white;
+      box-shadow: 0px 0px 0px 2px white;
+      border-radius: 3px;
+      padding: 5px 2em;
+      transition: 0.5s;
+      top: 25px;
+      border: none;
+    }
+    .form .btn-login:hover {
+      background: white;
+      color: dimgray;
+      transition: 0.5s;
+    }
+  }
+ }
+ input:-internal-autofill-selected {
+  background-color: transparent;
+}
+}
+@media (min-width:280px)and (max-width:370px) {
+  .LoginContainer{
+    span{
+    font-size: 10pt;
+      }
+      .LogError{
+        width:50%;
+        height:30px;
+        top:28%;
+        right: 25%;
+        .LogErrorMsg{
+          font-size: 10pt;
+        }
+      }
+  .login{
+    box-sizing: content-box;
+    width:50%;
+    height: 50%;
+  }
+  .form input[type=text]{
+    font-size: 10pt;
+  }
+  .form input[type=password]{
+    font-size: 10pt;
+  }
+ }
+}
+@media (min-width:375px) and (max-width:425px){
+  .LoginContainer{
+    span{
+    font-size: 10pt;
+      }
+      .LogError{
+        width:50%;
+        height:30px;
+        top:28%;
+        right: 25%;
+        .LogErrorMsg{
+          font-size: 10pt;
+        }
+      }
+  .login{
+    box-sizing: content-box;
+    width:50%;
+    height: 50%;
+  }
+  .form input[type=text]{
+    font-size: 10pt;
+  }
+  .form input[type=password]{
+    font-size: 10pt;
+  }
+ }
+}
+@media (min-width:425px) and (max-width:768px),(width:540px),(width:820px),(width:920px),(width:912px){
+  .LoginContainer{
+    span{
+    font-size: 10pt;
+      }
+      .LogError{
+        width:50%;
+        height:30px;
+        top:28%;
+        right: 25%;
+        .LogErrorMsg{
+          font-size: 10pt;
+        }
+      }
+  .login{
+    box-sizing: content-box;
+    width:50%;
+    height: 50%;
+  }
+  .form input[type=text]{
+    font-size: 10pt;
+  }
+  .form input[type=password]{
+    font-size: 10pt;
+  }
+ }
+}

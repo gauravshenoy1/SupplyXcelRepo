@@ -1,9 +1,9 @@
 import './App.scss';
-import Main from './Components/MainHome/Main';
+import EntryPoint from './Components/EntryPoint';
 function App() {
   return (
     <>
-    <Main/>
+    <EntryPoint/>
     </>
   );
 }

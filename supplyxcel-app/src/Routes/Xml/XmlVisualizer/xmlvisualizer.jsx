@@ -35,7 +35,7 @@ function XmlVisualizer() {
           id="zplCode"
           rows="10"
           cols="50"
-          placeholder="Enter ZPL code here"
+          placeholder="Enter XML code here"
           onChange={(e) => setXmlInput(e.target.value)}
           value={xmlInput}
         ></textarea>

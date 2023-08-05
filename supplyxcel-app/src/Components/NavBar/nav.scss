@@ -1,4 +1,5 @@
 .MainNav-container{
+    position: relative;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -7,11 +8,7 @@
     align-items: center;
     padding: 5px 15px;
     // box-shadow:6px 5px 10px #0000007c;
-        img:hover{
-            background-color: #ffffffaf;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+    
     .Nav-Heading{
         display: flex;
         justify-content: center;
@@ -21,13 +18,51 @@
         }
     }
     .Nav-UserDetail{
-        width: 12%;
+        cursor: pointer;
+        width:8%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
         p{
             color: #fff;
         }
+        &:hover{
+            background-color: #ffffffaf;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+    .User-logout{
+        cursor: pointer;
+        position: absolute;
+        top:50px;
+        right:25px;
+        color: #000;
+        background-color: #fff;
+        padding: 5px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        border-radius: 5px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        &::before{
+            background-color: #fff;
+            border: 1px solid #fff;
+            border-radius: 2px;
+            content: '';
+            height: 16px;
+            position: absolute;
+            top: -5px;
+            transform: rotate(45deg);
+            width: 16px;
+            
+        }
+    }
+    .User{
+        display: none;
+        cursor: pointer;
     }
 }
