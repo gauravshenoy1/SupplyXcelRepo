@@ -1,0 +1,37 @@
+{
+  "Profile": [
+    {
+      "user": "Gaurav",
+      "password": "abcde54321",
+      "Todo": [
+        {
+          "title": "zsdf",
+          "content": "serfg"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "user": "Akhil",
+      "password": "abcde54321",
+      "Todo": [
+        {
+          "title": "sdf",
+          "content": "sedr"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "user": "admin",
+      "password": "admin123",
+      "Todo": [
+        {
+          "title": "Akhil",
+          "content": "Hello World!!"
+        }
+      ],
+      "id": 3
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./Main.scss";
 import Navbar from "../NavBar/NAvbar";
@@ -10,14 +10,26 @@ import JSONGenerator from "../../Routes/JSON/JSONGenerator/JSONGenerator";
 import JSONMain from "../../Routes/JSON/JSONMain";
 import JsonVisual from "../../Routes/JSON/JSONVIsualizer/jsonVisual";
 import ZPL from "../../Routes/ZPL/Zpl";
-function Main() {
+import Todo from "../../Routes/Todo/Main";
+import { toast } from "react-toastify";
+import Toast,{ animate } from "../Toast/Toast";
+import Clock from "../../Routes/WorldClock/Clock";
+function Main(props) {
   const [sideBar, setsideBar] = useState(false);
   const handleChange = () => {
     setsideBar(!sideBar);
   };
-  return (
-    <>
-      <Navbar handleChange={handleChange} />
+function welcome(){
+  const {username}=props
+ toast(`Welcome ${username}`,animate)
+}
+
+useEffect(()=>{
+  welcome();
+},[])
+return (
+  <>
+      <Navbar handleChange={handleChange} handleLogout={props.handleLogout} />
       <BrowserRouter>
         <div className="Contents">
           <div className={sideBar ? "Main-sidebar" : "closed-Sidebar"}>
@@ -33,8 +45,11 @@ function Main() {
                 <Route path="/JSONGenerator" element={<JSONGenerator />} />
                 <Route path="/JSONVisualizer" element={<JsonVisual />} />
                 <Route path="/zpl" element={<ZPL/>}/>
+                <Route path="/notes" element={<Todo/>}/>
+                {/* <Route path="/clock" element={<Clock/>}/> */}
               </Routes>
             </div>
+            <Toast/>
           </div>
         </div>
       </BrowserRouter>

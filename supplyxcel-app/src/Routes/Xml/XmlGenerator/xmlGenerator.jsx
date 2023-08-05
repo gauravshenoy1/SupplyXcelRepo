@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./xmlGenerator.scss";
-import Data from "../../../Components/Sidebar/Sidedata";
 function XmlGenerator() {
   let [xmlHeader, setXMLHeader] = useState("");
   let [xmlTemplate, setxmlTemplate] = useState("");
