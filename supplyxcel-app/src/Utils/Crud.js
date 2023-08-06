@@ -2,7 +2,7 @@ import { toast } from "react-toastify";
 import { animate } from "../Components/Toast/Toast";
 
 const Api = "http://localhost:4001/Profile/";
-
+const LogApi = "http://localhost:4001/Logs/";
 async function getData() {
   let res = await fetch(Api);
   let data = await res.json();
@@ -20,4 +20,18 @@ const PostTodo = (id, input) => {
     return toast.success("Succesfully Saved", animate);
   });
 };
-export { getData, PostTodo };
+
+const PostLogData = (logData) => {
+  fetch(`${LogApi}`, {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify(logData),
+  }).then((res) => {
+    if (!res.status === 201) return console.log('Log error observed');
+    return null;
+  });
+};
+export { getData, PostTodo, PostLogData };
+
+//  onClick={()=>{ PostLogData({log:'Testing the logs'+item.name})}}
+// 

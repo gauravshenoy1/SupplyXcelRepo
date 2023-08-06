@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import moment from 'moment-timezone';
 import './WorldClock.scss';
+import { PostLogData } from '../../Utils/Crud';
 
 const Clock = () => {
     const [selectedTimezone, setSelectedTimezone] = useState('');
