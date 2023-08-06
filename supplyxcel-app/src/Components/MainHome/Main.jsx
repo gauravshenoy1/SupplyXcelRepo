@@ -46,7 +46,7 @@ return (
                 <Route path="/JSONVisualizer" element={<JsonVisual />} />
                 <Route path="/zpl" element={<ZPL/>}/>
                 <Route path="/notes" element={<Todo/>}/>
-                {/* <Route path="/clock" element={<Clock/>}/> */}
+                <Route path="/clock" element={<Clock/>}/>
               </Routes>
             </div>
             <Toast/>
