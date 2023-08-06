@@ -10,7 +10,7 @@ export default class LoginComp extends Component {
         </div>}
         <div className="login1">
           <div className="head">
-            <h1 className="company">Supply Excel</h1>
+            <h1 className="company">SupplyXcel</h1>
           </div>
           <p className="msg">User Login</p>
           <form className="login" onSubmit={handleauth}>
@@ -18,7 +18,7 @@ export default class LoginComp extends Component {
               <input
                 type="text"
                 name="username"
-                placeholder="User Name"
+                placeholder="Username"
                 className="text"
                 onChange={handleChange}
                 autoComplete="off"
@@ -28,7 +28,7 @@ export default class LoginComp extends Component {
               <input
                 type="password"
                 name="password"
-                placeholder="Enter Password"
+                placeholder="password"
                 className="password"
                 onChange={handleChange}
                 autoComplete="off"

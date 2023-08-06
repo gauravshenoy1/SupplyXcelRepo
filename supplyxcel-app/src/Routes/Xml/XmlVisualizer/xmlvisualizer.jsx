@@ -8,6 +8,7 @@ function XmlVisualizer() {
   const convertXmlToHtml = () => {
     fetch(apiUrl, {
       method: "POST",
+      //mode: "no-cors",
       headers: {
         "Content-Type": "text/html",
       },
@@ -35,7 +36,7 @@ function XmlVisualizer() {
           id="zplCode"
           rows="10"
           cols="50"
-          placeholder="Enter XML code here"
+          placeholder="Provide XML here..."
           onChange={(e) => setXmlInput(e.target.value)}
           value={xmlInput}
         ></textarea>

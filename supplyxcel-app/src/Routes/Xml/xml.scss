@@ -28,7 +28,6 @@
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-evenly;
-                flex-direction: row-reverse;
                 align-items: center;
                 .XmlprimaryBtn{
                     @include primaryButtons

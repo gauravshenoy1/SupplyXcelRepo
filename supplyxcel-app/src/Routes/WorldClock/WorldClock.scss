@@ -1,5 +1,5 @@
 .world-clock {
-  width: 320px;
+  width: 100%;
   text-align: center;
   padding: 20px;
   border-radius: 10px;
@@ -13,7 +13,8 @@
     font-size: 16px;
     font-weight: bold;
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
 
   select {
@@ -51,7 +52,7 @@
   #map {
     height: 400px;
     width: 600px;
-    margin-top: 30px;
+    margin-top: 50px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }

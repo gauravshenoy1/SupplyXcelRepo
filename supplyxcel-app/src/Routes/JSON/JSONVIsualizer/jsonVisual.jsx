@@ -1,20 +1,31 @@
 import React, { useState } from "react";
 import "./jsonVisualizer.scss"
-import { convertjsonToHtml } from "../../../Utils/jsonVisual";
-function JsonVisual() {
-  const [JsonInput, setJsonInput] = useState("");
 
-  const jsonConvert = () => {
-    try{
-      const visual = convertjsonToHtml(JsonInput)
-       visual.then(res=>{
-        document.getElementById('output').innerHTML = res;
+function JsonVisual() {
+  let [JsonInput, setJsonInput] = useState("");
+  const apiUrl = "https://www.anyjson.in/api/v2/data/jsontohtml";
+
+  const convertJsonToHtml = () => {
+    fetch(apiUrl, {
+      method: "POST",
+     // mode: "no-cors",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JsonInput,
+    })
+      .then((Response) => Response.text())
+      .then((data) => {
+        document.getElementById('output').innerHTML = data;
       })
-    }catch(error){
-      console.log(error.message)
-    }
+      .catch((error) => {
+        console.error("Error:", error);
+      });
   };
 
+  const execute =()=>{
+    convertJsonToHtml();
+ }
   const Refresh = () => {
     setJsonInput("");
     document.getElementById('output').innerHTML = "";
@@ -23,10 +34,10 @@ function JsonVisual() {
     <>
       <div className="Json_visualizer">
         <div>
-          <textarea value={JsonInput} onChange={(e)=>setJsonInput(e.target.value)}></textarea>
+          <textarea placeholder="Provide JSON here..." value={JsonInput} onChange={(e)=>setJsonInput(e.target.value)}></textarea>
         </div>
         <div className="Json_visualize_buttons">
-          <button onClick={jsonConvert}>Visualize</button>
+          <button onClick={execute}>Visualize</button>
           <button onClick={Refresh}>Refresh</button>
         </div>
        <div className="Table-container">

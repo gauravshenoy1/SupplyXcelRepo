@@ -32,7 +32,7 @@ const Data=[
     },
     {
         id:5,
-        name:"Supply Chain Calcutor",
+        name:"Supply Chain Calculator",
         icon:Calci,
         path:"/calci",
     },

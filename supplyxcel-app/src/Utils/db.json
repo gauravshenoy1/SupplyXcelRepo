@@ -5,8 +5,8 @@
       "password": "abcde54321",
       "Todo": [
         {
-          "title": "zsdf",
-          "content": "serfg"
+          "title": "This is the title",
+          "content": "This is the Description"
         }
       ],
       "id": 1
@@ -14,12 +14,7 @@
     {
       "user": "Akhil",
       "password": "abcde54321",
-      "Todo": [
-        {
-          "title": "sdf",
-          "content": "sedr"
-        }
-      ],
+      "Todo": [],
       "id": 2
     },
     {
@@ -27,8 +22,8 @@
       "password": "admin123",
       "Todo": [
         {
-          "title": "Akhil",
-          "content": "Hello World!!"
+          "title": "Add Title",
+          "content": "Add Content"
         }
       ],
       "id": 3

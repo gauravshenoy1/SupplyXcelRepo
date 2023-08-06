@@ -9,11 +9,11 @@ function xmlMain() {
     <div className="XmlMain-Container">
         <div className="XmlMainContents">
             <div className="xmlMainGenerator">
-                <img src={XmlGen} width="300px" height="150px" alt="XML-Generator" />
+                <img src={XmlGen} width="500px" height="150px" alt="XML-Generator" />
                <NavLink to="/xmlGenerator"><button className="XmlprimaryBtn">XML Generator</button></NavLink>
             </div>
             <div className="xmlMainVisualizer">
-                 <img src={XmlVisualizer}  width="300px" height="150px" alt="XML-Visulaizer" />
+                 <img src={XmlVisualizer}  width="500px" height="150px" alt="XML-Visulaizer" />
                 <NavLink to='/xmlVisualizer'><button className="XmlprimaryBtn">XML Visulaizer</button></NavLink>
             </div>
         </div>

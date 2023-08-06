@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./Main.scss";
-import Navbar from "../NavBar/NAvbar";
+import Navbar from "../NavBar/Navbar_";
 import Sidebar from "../Sidebar/Sidebar";
 import XmlMain from "../../Routes/Xml/xmlMain";
 import XmlGenerator from "../../Routes/Xml/XmlGenerator/xmlGenerator";
@@ -46,7 +46,7 @@ return (
                 <Route path="/JSONVisualizer" element={<JsonVisual />} />
                 <Route path="/zpl" element={<ZPL/>}/>
                 <Route path="/notes" element={<Todo/>}/>
-                {/* <Route path="/clock" element={<Clock/>}/> */}
+               <Route path="/clock" element={<Clock/>}/> 
               </Routes>
             </div>
             <Toast/>

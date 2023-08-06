@@ -40,19 +40,19 @@ function XmlGenerator() {
   return (
     <div className="XmlGenerator">
       <div className="XmlHeader">
-        <p className="xmlTitle">Provide Xml Header</p>
+        <p className="xmlTitle">Provide XML Header</p>
         <textarea onChange={(e) => setXMLHeader(e.target.value)} value={xmlHeader}></textarea>
       </div>
       <div className="XmlHeader">
-        <p className="xmlTitle">Provide XML Template Here</p>
+        <p className="xmlTitle">Provide XML Template</p>
         <textarea onChange={(e) => setxmlTemplate(e.target.value)}value={xmlTemplate}></textarea>
       </div>{" "}
       <div className="XmlHeader">
-        <p className="xmlTitle">Input Data Seperated By Comma</p>
+        <p className="xmlTitle">Provide Data Seperated By Comma</p>
         <textarea onChange={(e) => setinputData(e.target.value)}value={inputData}></textarea>
       </div>{" "}
       <div className="XmlHeader">
-        <p className="xmlTitle">Provide Xml Footer</p>
+        <p className="xmlTitle">Provide XML Footer</p>
         <textarea onChange={(e) => setxmlFooter(e.target.value)}value={xmlFooter}></textarea>
       </div>
       <div className="xmlGeneratorBtns">
