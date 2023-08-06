@@ -1,11 +1,17 @@
 import React, { useState } from "react";
 import "./xmlVisualizerStyles.scss"
+import { toast } from "react-toastify";
+import { animate } from "../../../Components/Toast/Toast";
 function XmlVisualizer() {
   let [xmlInput, setXmlInput] = useState("");
 
   const apiUrl = "https://www.anyjson.in/api/v2/data/xmltohtml";
 
   const convertXmlToHtml = () => {
+    if(xmlInput.length < 1){
+      toast.error("Please enter the data",animate)
+    }
+    else {
     fetch(apiUrl, {
       method: "POST",
       //mode: "no-cors",
@@ -21,6 +27,7 @@ function XmlVisualizer() {
       .catch((error) => {
         console.error("Error:", error);
       });
+    }
   };
  const execute =()=>{
     convertXmlToHtml();

@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import "./Zpl.scss"
+import { toast } from "react-toastify";
+import { animate } from "../../Components/Toast/Toast";
+
+
 function ZPL() {
   let [xmlInput, setXmlInput] = useState("");
 
@@ -7,6 +11,10 @@ function ZPL() {
     const zplCode = xmlInput;
     const apiUrl = "http://api.labelary.com/v1/printers/8dpmm/labels/4x6/0/";
 
+    if(zplCode.length < 1){
+      toast.error("Please enter the data",animate)
+    }
+    else {
     fetch(apiUrl, {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -21,6 +29,7 @@ function ZPL() {
       .catch((error) => {
         console.error("Error converting ZPL to label:", error);
       });
+    }
   }
 
   function arrayBufferToBase64(buffer) {

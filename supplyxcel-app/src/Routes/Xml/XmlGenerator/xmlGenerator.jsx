@@ -48,7 +48,7 @@ function XmlGenerator() {
         <textarea onChange={(e) => setxmlTemplate(e.target.value)}value={xmlTemplate}></textarea>
       </div>{" "}
       <div className="XmlHeader">
-        <p className="xmlTitle">Provide Data Seperated By Comma</p>
+        <p className="xmlTitle">Provide Data Separated By Comma</p>
         <textarea onChange={(e) => setinputData(e.target.value)}value={inputData}></textarea>
       </div>{" "}
       <div className="XmlHeader">
@@ -60,7 +60,7 @@ function XmlGenerator() {
         <button onClick={refersh}> Refresh</button>
       </div>
       <div className="XmlHeader">
-        <p className="xmlTitle-Output">Xml Output</p>
+        <p className="xmlTitle-Output">Bulk XML</p>
         <textarea id="FinalXml" value={xmlOutput}  style={{height:"150px"}} >{xmlOutput}</textarea>
       </div>
     </div>

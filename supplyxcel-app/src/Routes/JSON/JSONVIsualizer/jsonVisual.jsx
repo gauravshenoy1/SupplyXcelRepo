@@ -1,11 +1,17 @@
 import React, { useState } from "react";
 import "./jsonVisualizer.scss"
+import { toast } from "react-toastify";
+import { animate } from "../../../Components/Toast/Toast";
 
 function JsonVisual() {
-  let [JsonInput, setJsonInput] = useState("");
+  let [JsonInput, setJsonInput] = useState(""); 
   const apiUrl = "https://www.anyjson.in/api/v2/data/jsontohtml";
 
   const convertJsonToHtml = () => {
+    if(JsonInput.length < 1){
+      toast.error("Please enter the data",animate)
+    }
+    else {
     fetch(apiUrl, {
       method: "POST",
      // mode: "no-cors",
@@ -21,6 +27,8 @@ function JsonVisual() {
       .catch((error) => {
         console.error("Error:", error);
       });
+
+    }
   };
 
   const execute =()=>{

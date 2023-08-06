@@ -27,7 +27,7 @@ const mapDispatchToProps=(dispatch)=>{
   handleauth = (e) => {
     const{user}=this.props
     const { username, password } = this.state;
-    if (username === "") {
+    if (username.length < 1) {
       this.setState((prev) => ({
         DetailErr: {
           login: true,
@@ -35,10 +35,11 @@ const mapDispatchToProps=(dispatch)=>{
         },
       }));
       e.preventDefault();
+     
     } else if (password === "") {
       this.setState((prev) => ({
         DetailErr: {
-          login: prev.DetailErr.login,  
+          login: false,  
           pass: true,
         },
       }));

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./login.scss";
+import Logo from '../Images/Icons/favicon.png';
 export default class LoginComp extends Component {
   render() {
     const { handleChange,handleauth,LogError,DetailErr } = this.props;
@@ -11,6 +12,7 @@ export default class LoginComp extends Component {
         <div className="login1">
           <div className="head">
             <h1 className="company">SupplyXcel</h1>
+            <img src={Logo} alt="Logo" width="100px"  />
           </div>
           <p className="msg">User Login</p>
           <form className="login" onSubmit={handleauth}>
@@ -23,7 +25,7 @@ export default class LoginComp extends Component {
                 onChange={handleChange}
                 autoComplete="off"
               />
-              {DetailErr.login && <span style={{color:"red"}}>Please Enter User Name</span>}
+              {DetailErr.login && <span style={{color:"white"}}>Please Enter Username</span>}
               <br />
               <input
                 type="password"
@@ -33,14 +35,21 @@ export default class LoginComp extends Component {
                 onChange={handleChange}
                 autoComplete="off"
               />
-              {DetailErr.pass && <span style={{color:"red"}}>Please Enter Password</span>}
+              {DetailErr.pass && <span style={{color:"white"}}>Please Enter Password</span>}
               <br />
               <button href="/" className="btn-login" type="submit">
                 Login
               </button>
           </div>
+
           </form>
+          <div className="reg">
+            <a href="https://www.w3schools.com/">Click here to Register</a>
+
+          </div>
+
         </div>
+
       </div>
     );
   }
