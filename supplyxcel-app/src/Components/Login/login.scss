@@ -117,6 +117,9 @@ background:
  input:-internal-autofill-selected {
   background-color: transparent;
 }
+a{
+  cursor: pointer;
+}
 }
 @media (min-width:280px)and (max-width:370px) {
   .LoginContainer{

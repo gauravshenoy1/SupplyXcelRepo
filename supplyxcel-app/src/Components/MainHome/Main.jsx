@@ -14,6 +14,8 @@ import Todo from "../../Routes/Todo/Main";
 import { toast } from "react-toastify";
 import Toast,{ animate } from "../Toast/Toast";
 import Clock from "../../Routes/WorldClock/Clock";
+import Home from "../../Routes/Home";
+import Calci from "../../Routes/Calci/Calci";
 function Main(props) {
   const [sideBar, setsideBar] = useState(false);
   const handleChange = () => {
@@ -38,7 +40,8 @@ return (
           <div className="Container">
             <div className="Container-Contents">
               <Routes>
-                <Route path="/" element={<XmlMain />} />
+                <Route path="/" element={<Home/>}/>
+                <Route path="/xmlmain" element={<XmlMain />} />
                 <Route path="/xmlGenerator" element={<XmlGenerator />} />
                 <Route path="/xmlVisualizer" element={<XmlVisualizer />} />
                 <Route path="/json" element={<JSONMain />} />
@@ -46,7 +49,9 @@ return (
                 <Route path="/JSONVisualizer" element={<JsonVisual />} />
                 <Route path="/zpl" element={<ZPL/>}/>
                 <Route path="/notes" element={<Todo/>}/>
-               <Route path="/clock" element={<Clock/>}/> 
+               <Route path="/clock" element={<Clock/>}/>
+               <Route path="/calci" element={<Calci/>}/> 
+
               </Routes>
             </div>
             <Toast/>
