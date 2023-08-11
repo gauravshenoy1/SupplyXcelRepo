@@ -10,7 +10,7 @@ const Data=[
         id:1,
         name:"XML Tools",
         icon:XmlImage,
-        path:"/"
+        path:"/xmlmain"
     },
     {
         id:2,

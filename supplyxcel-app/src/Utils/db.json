@@ -14,7 +14,12 @@
     {
       "user": "Akhil",
       "password": "abcde54321",
-      "Todo": [],
+      "Todo": [
+        {
+          "title": "Add Title",
+          "content": "Add Content"
+        }
+      ],
       "id": 2
     },
     {
