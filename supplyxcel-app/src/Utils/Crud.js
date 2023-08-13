@@ -22,10 +22,11 @@ const PostTodo = (id, input) => {
 };
 
 const PostLogData = (logData) => {
+  const data = {logData}
   fetch(`${LogApi}`, {
     method: "POST",
     headers: { "content-type": "application/json" },
-    body: JSON.stringify(logData),
+    body: JSON.stringify(data),
   }).then((res) => {
     if (!res.status === 201) return console.log('Log error observed');
     return null;

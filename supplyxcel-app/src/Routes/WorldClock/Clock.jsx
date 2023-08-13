@@ -4,7 +4,8 @@ import moment from 'moment-timezone';
 import './WorldClock.scss';
 import { PostLogData } from '../../Utils/Crud';
 
-const Clock = () => {
+const Clock = (props) => {
+    const {uname}=props
     const [selectedTimezone, setSelectedTimezone] = useState('');
     const [currentTime, setCurrentTime] = useState('');
     const [latLng, setLatLng] = useState([20, 0]);
@@ -24,6 +25,7 @@ const Clock = () => {
         setCurrentTime(currentTime);
         const latlng = getCountryCoordinates(selectedTimezone);
         setLatLng(latlng);
+        PostLogData(`${uname}" Requested Time of "${selectedTimezone}`)
     };
 
     const getCountryCoordinates = (timezone) => {

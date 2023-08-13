@@ -4,7 +4,7 @@ import Logo from '../Images/Icons/favicon.png';
 import Toast from "../Toast/Toast";
 export default class LoginComp extends Component {
   render() {
-    const { handleChange,handleReg,handleRegState,handleUserReg,handleauth,LogError,DetailErr,register } = this.props;
+    const { handleChange,handleReg,handleRegState,handleUserReg,handleauth,LogError,DetailErr,register,username,password } = this.props;
     return (
       <div className="LoginContainer">
       { LogError && <div className="LogError">

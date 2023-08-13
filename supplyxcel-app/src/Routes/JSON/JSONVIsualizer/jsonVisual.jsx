@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import "./jsonVisualizer.scss"
 import { toast } from "react-toastify";
 import { animate } from "../../../Components/Toast/Toast";
+import { PostLogData } from "../../../Utils/Crud";
 
-function JsonVisual() {
+function JsonVisual(props) {
+  const{uname}=props
   let [JsonInput, setJsonInput] = useState(""); 
   const apiUrl = "https://www.anyjson.in/api/v2/data/jsontohtml";
 
@@ -22,6 +24,7 @@ function JsonVisual() {
     })
       .then((Response) => Response.text())
       .then((data) => {
+        PostLogData(`${uname} " Requested JSON VISUALIZER"`)
         document.getElementById('output').innerHTML = data;
       })
       .catch((error) => {

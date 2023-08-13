@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./xmlGenerator.scss";
-function XmlGenerator() {
+import { PostLogData } from "../../../Utils/Crud";
+function XmlGenerator(props) {
+  const {uname}=props;
   let [xmlHeader, setXMLHeader] = useState("");
   let [xmlTemplate, setxmlTemplate] = useState("");
   let [inputData, setinputData] = useState("");
@@ -26,6 +28,8 @@ function XmlGenerator() {
     }
     d += XmlFooter;
     setXmlOutput(d);
+    PostLogData(`${uname}" Generated XML"`)
+
   };
 
 //   refresh

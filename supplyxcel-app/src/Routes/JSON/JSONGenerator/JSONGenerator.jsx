@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import "./JSONGenerator.scss";
+import { PostLogData } from "../../../Utils/Crud";
 
 
 
-function JSONGenerator() {
-
+function JSONGenerator(props) {
+ const{uname}=props
   let [JSONHeader, setJSONHeader] = useState("");
   let [JSONTemplate, setJSONTemplate] = useState("");
   let [inputData, setinputData] = useState("");
@@ -13,6 +14,7 @@ function JSONGenerator() {
 
 //   Functionality of  Genetrate`
   const generate = () => {
+    PostLogData(`${uname} "Requested to Generate JSON "`)
     let jsonHeader = JSONHeader;
     let jsonTemplate = JSONTemplate;
     let Data = inputData.split(";");
