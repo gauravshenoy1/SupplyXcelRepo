@@ -4,6 +4,7 @@ import Logo from '../Images/Icons/favicon.png';
 import Menu from '../Images/Icons/menu.png';
 import Man from '../Images/Icons/man.png';
 import { connect } from "react-redux";
+import { PostLogData } from '../../Utils/Crud';
 
 const mapStateToProps=(state)=>{
   const {user:{data}}=state
@@ -15,6 +16,10 @@ const mapStateToProps=(state)=>{
 function Navbar(props) {
   const{handleChange,user:{user},handleLogout}=props
   const [handleLogut,SethandleLogut]=useState(false)
+  const handleLOut=()=>{
+    PostLogData(`"USER LOGGED OUT "${user}`)
+    handleLogout()
+  }
   return (
     <>
     <div className='MainNav-container'>
@@ -28,7 +33,7 @@ function Navbar(props) {
         <img src={Man} alt="UserImg" width="30px" />
           <p >{user}</p>
       </div>
-          <p className={handleLogut?"User-logout":"User"} onClick={handleLogout}>logout</p>
+          <p className={handleLogut?"User-logout":"User"} onClick={()=>handleLOut()}>logout</p>
     </div>
     </>
   )

@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import Login from "./Login";
 import Main from "./MainHome/Main";
 import { user } from "../Store/user/userAction";
+import { PostLogData } from "../Utils/Crud";
 
 const mapStateToProps =(state)=>({
   id:state.user.id
@@ -59,6 +60,7 @@ const mapDispatchToProps=(dispatch)=>{
               if (item.user === username) {
                 if (item.password === password) {
                   user(item)
+                  PostLogData("USER_LOGGED IN "+`${item.user}`)
                   this.setState({
                     auth: true,
                     id:item.id,

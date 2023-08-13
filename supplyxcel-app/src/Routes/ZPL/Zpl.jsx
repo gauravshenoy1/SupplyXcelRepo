@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import "./Zpl.scss"
 import { toast } from "react-toastify";
 import { animate } from "../../Components/Toast/Toast";
+import { PostLogData } from "../../Utils/Crud";
 
 
-function ZPL() {
+function ZPL(props) {
+  const{uname}=props
   let [xmlInput, setXmlInput] = useState("");
 
   function convertZPLToLabelary() {
@@ -29,6 +31,7 @@ function ZPL() {
       .catch((error) => {
         console.error("Error converting ZPL to label:", error);
       });
+      PostLogData(`${uname}" Generated Zpl"`)
     }
   }
 

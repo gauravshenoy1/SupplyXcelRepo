@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import "./xmlVisualizerStyles.scss"
 import { toast } from "react-toastify";
 import { animate } from "../../../Components/Toast/Toast";
-function XmlVisualizer() {
+import { PostLogData } from "../../../Utils/Crud";
+function XmlVisualizer(props) {
+  const{uname}=props
+
   let [xmlInput, setXmlInput] = useState("");
 
   const apiUrl = "https://www.anyjson.in/api/v2/data/xmltohtml";
@@ -27,6 +30,7 @@ function XmlVisualizer() {
       .catch((error) => {
         console.error("Error:", error);
       });
+      PostLogData(`${uname}" Requested To Visualize XML"`)
     }
   };
  const execute =()=>{
