@@ -34,6 +34,8 @@ function Calci() {
   }
 
   return (
+    <section className="Calci-Wrapper">
+    <article className="calciContainerWrapper-1">
     <div className="calculator">
       <div className="calculation-container">
         <h2>Container Volume</h2>
@@ -69,6 +71,8 @@ function Calci() {
         <div className="result" id="freightCost">{freightCost}</div>
       </div>
     </div>
+    </article>
+  </section>
   );
 }
 
