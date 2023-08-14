@@ -17,7 +17,7 @@ function Navbar(props) {
   const{handleChange,user:{user},handleLogout}=props
   const [handleLogut,SethandleLogut]=useState(false)
   const handleLOut=()=>{
-    PostLogData(`"USER LOGGED OUT "${user}`)
+    PostLogData(`"USER LOGGED OUT - "${user}`)
     handleLogout()
   }
   return (

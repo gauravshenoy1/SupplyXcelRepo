@@ -50,7 +50,7 @@ function Todo(props) {
         body: JSON.stringify(jsonData),
       }).then((res) => {
         if (!res.status === 201) return toast.error("Error", animate);
-       return PostLogData(`${user} "Created a TODO"`)
+       return PostLogData(`${user} " - Created a TODO"`)
       });
     } else {
       return toast.error("Error", animate);
@@ -66,7 +66,7 @@ function Todo(props) {
     postData();
     
     toast.error("Successfully Deleted");
-    return PostLogData(`${user} "Deleted a TODO"`)
+    return PostLogData(`${user} " - Deleted a TODO"`)
   }
 
   const data = () => {

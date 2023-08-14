@@ -28,7 +28,7 @@ function XmlGenerator(props) {
     }
     d += XmlFooter;
     setXmlOutput(d);
-    PostLogData(`${uname}" Generated XML"`)
+    PostLogData(`${uname}" - Generated XML"`)
 
   };
 

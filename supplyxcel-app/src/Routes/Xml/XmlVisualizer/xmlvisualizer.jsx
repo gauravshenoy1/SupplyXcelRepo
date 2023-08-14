@@ -30,7 +30,7 @@ function XmlVisualizer(props) {
       .catch((error) => {
         console.error("Error:", error);
       });
-      PostLogData(`${uname}" Requested To Visualize XML"`)
+      PostLogData(`${uname}" - Requested To Visualize XML"`)
     }
   };
  const execute =()=>{

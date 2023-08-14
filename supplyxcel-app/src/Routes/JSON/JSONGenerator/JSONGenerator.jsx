@@ -14,7 +14,7 @@ function JSONGenerator(props) {
 
 //   Functionality of  Genetrate`
   const generate = () => {
-    PostLogData(`${uname} "Requested to Generate JSON "`)
+    PostLogData(`${uname} " - Requested to Generate JSON "`)
     let jsonHeader = JSONHeader;
     let jsonTemplate = JSONTemplate;
     let Data = inputData.split(";");

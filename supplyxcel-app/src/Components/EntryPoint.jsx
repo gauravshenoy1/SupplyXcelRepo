@@ -60,7 +60,7 @@ const mapDispatchToProps=(dispatch)=>{
               if (item.user === username) {
                 if (item.password === password) {
                   user(item)
-                  PostLogData("USER_LOGGED IN "+`${item.user}`)
+                  PostLogData("USER_LOGGED IN - "+`${item.user}`)
                   this.setState({
                     auth: true,
                     id:item.id,

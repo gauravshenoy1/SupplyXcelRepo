@@ -22,7 +22,9 @@ const PostTodo = (id, input) => {
 };
 
 const PostLogData = (logData) => {
-  const data = {logData}
+  let timeStamp = new Date().toISOString()
+  let log = timeStamp+' - '+logData;
+  const data = {log}
   fetch(`${LogApi}`, {
     method: "POST",
     headers: { "content-type": "application/json" },
@@ -34,5 +36,3 @@ const PostLogData = (logData) => {
 };
 export { getData, PostTodo, PostLogData };
 
-//  onClick={()=>{ PostLogData({log:'Testing the logs'+item.name})}}
-// 

@@ -31,7 +31,7 @@ function ZPL(props) {
       .catch((error) => {
         console.error("Error converting ZPL to label:", error);
       });
-      PostLogData(`${uname}" Generated Zpl"`)
+      PostLogData(`${uname}" - Generated Zpl"`)
     }
   }
 

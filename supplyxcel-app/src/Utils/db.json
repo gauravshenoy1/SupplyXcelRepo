@@ -32,7 +32,54 @@
         }
       ],
       "id": 3
+    },
+    {
+      "user": "ADMIN",
+      "password": "admin123",
+      "Todo": [],
+      "id": 4
     }
   ],
-  "Logs": []
+  "Logs": [
+    {
+      "logData": "USER_LOGGED IN admin",
+      "id": 1
+    },
+    {
+      "logData": "admin \"Created a TODO\"",
+      "id": 2
+    },
+    {
+      "logData": "\"USER LOGGED OUT \"admin",
+      "id": 3
+    },
+    {
+      "logData": "USER_REGISTERED ADMIN",
+      "id": 4
+    },
+    {
+      "logData": "USER_LOGGED IN ADMIN",
+      "id": 5
+    },
+    {
+      "logData": "USER_LOGGED IN Gaurav",
+      "id": 6
+    },
+    {
+      "logData": "Gaurav \"Requested to Generate JSON \"",
+      "id": 7
+    },
+    {
+      "logData": "Gaurav\" Requested To Visualize XML\"",
+      "id": 8
+    },
+    {
+      "log": "2023-08-14T06:45:05.236Z - USER_LOGGED IN admin",
+      "id": 9
+    },
+    {
+      "log": "2023-08-14T07:20:17.844Z - USER_LOGGED IN - admin",
+      "id": 10
+    }
+  ]
 }

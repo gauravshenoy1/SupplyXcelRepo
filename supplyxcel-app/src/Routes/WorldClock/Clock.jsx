@@ -25,7 +25,7 @@ const Clock = (props) => {
         setCurrentTime(currentTime);
         const latlng = getCountryCoordinates(selectedTimezone);
         setLatLng(latlng);
-        PostLogData(`${uname}" Requested Time of "${selectedTimezone}`)
+        PostLogData(`${uname}" - Requested Time of "${selectedTimezone}`)
     };
 
     const getCountryCoordinates = (timezone) => {
