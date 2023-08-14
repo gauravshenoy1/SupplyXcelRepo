@@ -56,7 +56,7 @@ export default class Login extends Component {
               headers: { "content-type": "application/json" },
               body: JSON.stringify(Data),
             });
-            PostLogData("USER_REGISTERED "+`${username}`)
+            PostLogData("USER_REGISTERED - "+`${username}`)
             this.setState({
               username: "",
               password: "",

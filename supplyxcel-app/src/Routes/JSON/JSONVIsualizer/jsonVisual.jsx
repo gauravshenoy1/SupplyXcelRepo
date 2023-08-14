@@ -24,7 +24,7 @@ function JsonVisual(props) {
     })
       .then((Response) => Response.text())
       .then((data) => {
-        PostLogData(`${uname} " Requested JSON VISUALIZER"`)
+        PostLogData(`${uname} " - Requested JSON VISUALIZER"`)
         document.getElementById('output').innerHTML = data;
       })
       .catch((error) => {
