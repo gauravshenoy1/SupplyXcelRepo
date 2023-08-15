@@ -38,6 +38,58 @@
       "password": "admin123",
       "Todo": [],
       "id": 4
+    },
+    {
+      "user": "Admin",
+      "password": "admin123",
+      "Todo": [],
+      "id": 5
+    },
+    {
+      "user": "gaurav",
+      "password": "abcde",
+      "Todo": [
+        {
+          "title": "Add Title",
+          "content": "Add Content"
+        },
+        {
+          "title": "Priority 1 ",
+          "content": "Need to check on Adidas issue of order not getting waved when multiple orders are waved at the same time "
+        },
+        {
+          "title": "Priority 2",
+          "content": "DHL courier shipping label issue needs to be address by wednesday"
+        },
+        {
+          "title": "Priority 3",
+          "content": "Check with manager for a call with R&D on new feature requirement"
+        }
+      ],
+      "id": 6
+    },
+    {
+      "user": "gaurav123",
+      "password": "abcde54321",
+      "Todo": [],
+      "id": 7
+    },
+    {
+      "user": "gaurav1234",
+      "password": "abcde54321",
+      "Todo": [],
+      "id": 8
+    },
+    {
+      "user": "testuser",
+      "password": "abcde54321",
+      "Todo": [
+        {
+          "title": "Add Title",
+          "content": "Add Content"
+        }
+      ],
+      "id": 9
     }
   ],
   "Logs": [
@@ -80,6 +132,170 @@
     {
       "log": "2023-08-14T07:20:17.844Z - USER_LOGGED IN - admin",
       "id": 10
+    },
+    {
+      "log": "2023-08-14T17:23:38.192Z - USER_LOGGED IN - admin",
+      "id": 11
+    },
+    {
+      "log": "2023-08-14T17:23:52.995Z - admin \" - Created a TODO\"",
+      "id": 12
+    },
+    {
+      "log": "2023-08-14T19:46:41.116Z - USER_REGISTERED - Admin",
+      "id": 13
+    },
+    {
+      "log": "2023-08-14T19:48:18.433Z - USER_REGISTERED - gaurav",
+      "id": 14
+    },
+    {
+      "log": "2023-08-14T19:48:53.998Z - USER_LOGGED IN - Gaurav",
+      "id": 15
+    },
+    {
+      "log": "2023-08-14T19:48:59.600Z - \"USER LOGGED OUT - \"Gaurav",
+      "id": 16
+    },
+    {
+      "log": "2023-08-14T19:49:08.594Z - USER_LOGGED IN - gaurav",
+      "id": 17
+    },
+    {
+      "log": "2023-08-14T19:49:14.117Z - \"USER LOGGED OUT - \"gaurav",
+      "id": 18
+    },
+    {
+      "log": "2023-08-14T19:49:21.993Z - USER_LOGGED IN - gaurav",
+      "id": 19
+    },
+    {
+      "log": "2023-08-14T19:53:13.297Z - gaurav\" - Generated Zpl\"",
+      "id": 20
+    },
+    {
+      "log": "2023-08-14T19:53:41.318Z - gaurav \" - Created a TODO\"",
+      "id": 21
+    },
+    {
+      "log": "2023-08-14T19:54:20.458Z - gaurav \" - Created a TODO\"",
+      "id": 22
+    },
+    {
+      "log": "2023-08-14T19:54:53.342Z - gaurav \" - Created a TODO\"",
+      "id": 23
+    },
+    {
+      "log": "2023-08-14T19:55:21.561Z - gaurav \" - Created a TODO\"",
+      "id": 24
+    },
+    {
+      "log": "2023-08-14T19:55:56.129Z - gaurav\" - Requested Time of \"Asia/Kolkata",
+      "id": 25
+    },
+    {
+      "log": "2023-08-14T19:59:13.883Z - gaurav\" - Generated XML\"",
+      "id": 26
+    },
+    {
+      "log": "2023-08-14T19:59:23.270Z - gaurav\" - Generated XML\"",
+      "id": 27
+    },
+    {
+      "log": "2023-08-14T20:00:48.189Z - gaurav\" - Requested To Visualize XML\"",
+      "id": 28
+    },
+    {
+      "log": "2023-08-14T20:01:58.353Z - gaurav \" - Requested to Generate JSON \"",
+      "id": 29
+    },
+    {
+      "log": "2023-08-14T20:02:14.940Z - gaurav \" - Requested to Generate JSON \"",
+      "id": 30
+    },
+    {
+      "log": "2023-08-14T20:03:54.568Z - gaurav \" - Requested to Generate JSON \"",
+      "id": 31
+    },
+    {
+      "log": "2023-08-14T20:04:22.666Z - gaurav \" - Requested JSON VISUALIZER\"",
+      "id": 32
+    },
+    {
+      "log": "2023-08-14T20:04:27.374Z - gaurav \" - Requested JSON VISUALIZER\"",
+      "id": 33
+    },
+    {
+      "log": "2023-08-15T08:05:17.014Z - USER_LOGGED IN - admin",
+      "id": 34
+    },
+    {
+      "log": "2023-08-15T08:06:47.442Z - admin \" - Requested to Generate JSON \"",
+      "id": 35
+    },
+    {
+      "log": "2023-08-15T08:10:51.775Z - USER_REGISTERED - gaurav123",
+      "id": 36
+    },
+    {
+      "log": "2023-08-15T08:11:39.854Z - USER_REGISTERED - gaurav1234",
+      "id": 37
+    },
+    {
+      "log": "2023-08-15T08:12:45.744Z - USER_REGISTERED - testuser",
+      "id": 38
+    },
+    {
+      "log": "2023-08-15T08:12:59.717Z - USER_LOGGED IN - testuser",
+      "id": 39
+    },
+    {
+      "log": "2023-08-15T08:13:16.754Z - testuser\" - Generated XML\"",
+      "id": 40
+    },
+    {
+      "log": "2023-08-15T08:13:29.952Z - testuser\" - Requested To Visualize XML\"",
+      "id": 41
+    },
+    {
+      "log": "2023-08-15T08:13:41.120Z - testuser\" - Generated XML\"",
+      "id": 42
+    },
+    {
+      "log": "2023-08-15T08:13:48.610Z - testuser\" - Requested To Visualize XML\"",
+      "id": 43
+    },
+    {
+      "log": "2023-08-15T08:13:59.359Z - testuser \" - Requested to Generate JSON \"",
+      "id": 44
+    },
+    {
+      "log": "2023-08-15T08:14:17.978Z - testuser \" - Requested JSON VISUALIZER\"",
+      "id": 45
+    },
+    {
+      "log": "2023-08-15T08:14:48.493Z - testuser\" - Generated Zpl\"",
+      "id": 46
+    },
+    {
+      "log": "2023-08-15T08:15:10.084Z - testuser\" - Generated Zpl\"",
+      "id": 47
+    },
+    {
+      "log": "2023-08-15T08:15:18.953Z - testuser \" - Created a TODO\"",
+      "id": 48
+    },
+    {
+      "log": "2023-08-15T08:15:20.553Z - testuser \" - Created a TODO\"",
+      "id": 49
+    },
+    {
+      "log": "2023-08-15T08:15:36.087Z - testuser\" - Requested Time of \"Europe/London",
+      "id": 50
+    },
+    {
+      "log": "2023-08-15T08:15:43.300Z - \"USER LOGGED OUT - \"testuser",
+      "id": 51
     }
   ]
 }
