@@ -6,10 +6,14 @@ import { PostLogData } from "../../../Utils/Crud";
 
 function JSONGenerator(props) {
  const{uname}=props
-  let [JSONHeader, setJSONHeader] = useState("");
-  let [JSONTemplate, setJSONTemplate] = useState("");
-  let [inputData, setinputData] = useState("");
-  let [JSONFooter, setJSONFooter] = useState("");
+ let headerPreText='{  \n"orders": [';
+ let dataTemplate='\n    { \n      "order_id": "1001", \n      "customer": { \n        "name": "$1", \n        "address": "$2", \n        "pincode": "$3" \n      }, \n      "order_date": "2023-08-06", \n      "order_lines": [ \n        { \n          "product_id": "P001", \n          "product_name": "Widget A", \n          "quantity": 2, \n          "unit_price": 10.99 \n        }, \n        { \n          "product_id": "P002", \n          "product_name": "Gizmo B", \n          "quantity": 1, \n          "unit_price": 24.99 \n        } \n      ] \n    },';
+ let footerPreText='\n  ]\n}';
+ let dataPreText='\nGaurav,Kamakshipalya Bangalore,560079; \nAkhilesh,Chikkamagalur,560888; \nRamesh,Mangalore,576767;'; 
+  let [JSONHeader, setJSONHeader] = useState(headerPreText);
+  let [JSONTemplate, setJSONTemplate] = useState(dataTemplate);
+  let [inputData, setinputData] = useState(dataPreText);
+  let [JSONFooter, setJSONFooter] = useState(footerPreText);
   let [JSONOutput, setJSONOutput] = useState("");
 
 //   Functionality of  Genetrate`
